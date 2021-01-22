@@ -17,22 +17,22 @@ disableLanguages        = []
   home                  = ["html", "json", "rss"]
 
 [params]
-  enableCDN             = false
+  enableCDN             = true
   cssFiles              = ["default"]
   jsFiles               = ["default"]
   highlightjs           = true
   highlightjsTheme      = ""
   highlightjsLang       = []
   viewMorePostsLink     = "/blog/"
-  readingTime           = true
+  readingTime           = false
   imageStretch          = ""
   removeBlur            = false
-  socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
+  # socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
   hideEmptyStats        = false
 
   [params.meta]
-    description         = "A theme by HTML5 UP, ported by Julio Pescador. Slimmed and enhanced by Patrick Collins. Multilingual by StatnMap. Powered by Hugo."
-    author              = "HTML5UP and Hugo"
+    description         = "a technology sharing blog maintained by David Shu"
+    author              = "David shu"
     favicon             = false
     svg                 = true
     faviconVersion      = "1"
@@ -40,19 +40,19 @@ disableLanguages        = []
     iOSColor            = "#ffffff"
 
   [params.header]
-    navbarTitle         = "David Blog"
-    dynamicTitles       = true
+    navbarTitle         = "code & tech"
+    dynamicTitles       = false
     searchMenu          = true
-    shareMenu           = true
-    languageMenu        = true
+    shareMenu           = false
+    languageMenu        = false
 
   [params.intro]
     header                = "David Blog"
     paragraph             = "热爱生活，数码爱好者，coder"
-    rssIntro              = true
+    rssIntro              = false
     socialIntro           = true
-    hideWhenSingleColumn  = false
-    alwaysOnHomepage      = false
+    hideWhenSingleColumn  = true
+    alwaysOnHomepage      = true
 
     [params.intro.pic]
       src                 = "https://static.code-david.cn/blog/logo.jpg"
@@ -61,17 +61,17 @@ disableLanguages        = []
       alt                 = "Hugo Future Imperfect Slim"
 
   [params.sidebar]
-    about               = "这是David分享技术的博客"
+    about               = "这是David分享技术、学习经验的博客"
     postAmount          = 5
     categories          = true
     categoriesByCount   = true
 
   [params.footer]
-    rssFooter           = true
+    rssFooter           = false
     socialFooter        = true
 
   [params.staticman]
-    enabled             = true
+    enabled             = false
     api                 = ""  # No Trailing Slash
     gitProvider         = ""
     username            = ""
@@ -85,46 +85,46 @@ disableLanguages        = []
 [menu]
 
   [[menu.main]]
-    name              = "Home"
+    name              = "主页"
     identifier        = "home"
     url               = "/"
     pre               = "<i class='fa fa-home'></i>"
     weight            = 1
 
   [[menu.main]]
-    name              = "About"
+    name              = "关于我"
     identifier        = "about"
     url               = "/about/"
     pre               = "<i class='far fa-id-card'></i>"
-    weight            = 2
+    weight            = 4
 
   [[menu.main]]
-    name              = "Blog"
+    name              = "文章"
     identifier        = "blog"
     url               = "/blog/"
     pre               = "<i class='far fa-newspaper'></i>"
-    weight            = 3
+    weight            = 2
 
   [[menu.main]]
-    name              = "Categories"
+    name              = "分类"
     identifier        = "categories"
     url               = "/categories/"
     pre               = "<i class='fas fa-sitemap'></i>"
-    weight            = 5
+    weight            = 3
 
   [[menu.main]]
-    name              = "Contact"
+    name              = "联系我"
     identifier        = "contact"
     url               = "/contact/"
     pre               = "<i class='far fa-envelope'></i>"
     weight            = 6
 
-[Languages]
+# [Languages]
 
-  [Languages.en]
-    LanguageCode        = "en"
-    LanguageName        = "中文"
-    weight              = 1
+#   [Languages.en]
+#     LanguageCode        = "en"
+#     LanguageName        = "English"
+#     weight              = 1
 
 [social]
   # Coding Communities
@@ -136,22 +136,22 @@ disableLanguages        = []
   codepen               = ""
   # Visual Art Communities
   deviantart            = ""
-  flickr                = "example"
+  flickr                = ""
   behance               = ""
   dribbble              = ""
   # Publishing Communities
   wordpress             = ""
   medium                = ""
   # Professional/Business Oriented Communities
-  linkedin              = "example"
-  linkedin_company      = "examplebusiness"
+  linkedin              = ""
+  linkedin_company      = ""
   foursquare            = ""
   xing                  = ""
   slideshare            = ""
   # Social Networks
-  facebook              = "example"
+  facebook              = ""
   googleplus            = ""
-  reddit                = "example"
+  reddit                = ""
   quora                 = ""
   youtube               = ""
   vimeo                 = ""
@@ -159,19 +159,19 @@ disableLanguages        = []
     # WeChat and QQ need testing.
     wechat              = ""
     qq                  = "" # User ID Number
-  instagram             = "example"
+  instagram             = ""
   tumblr                = ""
-  twitter               = "example"
+  twitter               = ""
   strava                = ""
   skype                 = ""
   snapchat              = ""
-  pinterest             = "example"
-  telegram              = "example"
+  pinterest             = ""
+  telegram              = ""
   vine                  = ""
   googlescholar         = ""
   orcid                 = ""
-  researchgate          = "example"
-  keybase               = "example"
-  mastodon              = "example.com/@example"
+  researchgate          = ""
+  keybase               = ""
+  mastodon              = ""
   # Email
-  email                 = "example"
+  email                 = "a294562476@gmail.com"
