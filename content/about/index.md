@@ -1,25 +1,17 @@
 +++
-title = "About"
-description = "Hugo, the world’s fastest framework for building websites"
-author = "Hugo Authors"
-date = "2019-02-28"
-layout = "about"
+title = "关于我"
+description = "作者的个人简介"
+author = "David Shu"
+date = "2021-01-22T10:39:58+08:00"
+tags = [""]
+categories = [""]
+comments = true
+removeBlur = false
+[[images]]
+  src = "https://static.code-david.cn/blog/logo.jpg"
+  alt = "David logo"
+  stretch = ""
 +++
-
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-
-Hugo makes use of a variety of open source projects including:
-
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
-
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
-
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+- 90后青年，目前硕士在读
+- 关注技术方向主要为深度学习、C++、后端开发
+- 本博客致力于写作个人学习经验分享，分享**易读**、**易复现**的技术细节

@@ -24,7 +24,7 @@ disableLanguages        = []
   highlightjsTheme      = ""
   highlightjsLang       = []
   viewMorePostsLink     = "/blog/"
-  readingTime           = false
+  readingTime           = true
   imageStretch          = ""
   removeBlur            = false
   # socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
@@ -58,7 +58,7 @@ disableLanguages        = []
       src                 = "https://static.code-david.cn/blog/logo.jpg"
       shape               = "circle"
       width               = ""
-      alt                 = "Hugo Future Imperfect Slim"
+      alt                 = "David logo"
 
   [params.sidebar]
     about               = "这是David分享技术、学习经验的博客"

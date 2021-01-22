@@ -1,8 +1,8 @@
 +++
-title = ""
+title = "{{ replace .TranslationBaseName "-" " " | title }}"
 description = ""
-author = ""
-date = ""
+author = "David Shu"
+date = "{{ .Date }}"
 tags = [""]
 categories = [""]
 comments = true
