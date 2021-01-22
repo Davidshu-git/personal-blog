@@ -71,12 +71,12 @@ disableLanguages        = []
     socialFooter        = true
 
   [params.staticman]
-    enabled             = false
-    api                 = ""  # No Trailing Slash
-    gitProvider         = ""
-    username            = ""
-    repo                = ""
-    branch              = ""
+    enabled             = true
+    api                 = "https://staticman3.herokuapp.com"  # No Trailing Slash
+    gitProvider         = "github"
+    username            = "Davidshu-git"
+    repo                = "staticman"
+    branch              = "master"
 
     [params.staticman.recaptcha]
       siteKey           = ""
