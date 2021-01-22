@@ -3,9 +3,3 @@ public
 
 # mac文件
 **/.DS_Store
-
-# 自动生成文件
-resources
-
-# static
-static
