@@ -1,29 +1,24 @@
 +++
-title = "Markdown Syntax Guide"
-description = "Sample article showcasing basic Markdown syntax and formatting for HTML elements."
-author = "Hugo Authors"
-date = "2019-03-11"
-tags = ["markdown", "css", "html", "themes"]
-categories = ["themes", "syntax"]
-[[images]]
-  src = "https://static.code-david.cn/blog/pic01.jpg"
-  alt = "Mountain Range Through Clouds"
-  stretch = "horizontal"
+title = "Markdown 语法简介"
+description = "该文章展示基本的Markdown和HTML结合的语法格式"
+author = "David Shu"
+date = "2021-01-22T14:22:16+08:00"
+tags = ["Markdown"]
+categories = ["Markdown"]
+comments = true
+removeBlur = false
 [[images]]
   src = "https://static.code-david.cn/blog/pic02.jpg"
   alt = "Desert Scene"
-[[images]]
-  src = "https://static.code-david.cn/blog/pic03.jpg"
-  alt = "Valley"
-  stretch = "horizontal"
+  stretch = "h"
 +++
 
-This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+这篇文章主要介绍了一些基本的Markdown语法，补充介绍了结合HTML、CSS的技法
 <!--more-->
 
-## Headings
+## 多级大小的标题
 
-The following HTML `<h1>`—`<h6>` elements represent six levels of section headings. `<h1>` is the highest section level while `<h6>` is the lowest.
+Markdown支持六种大小的标题，下面展示了多达6级标题样式，在语法中，多级标题通过#开头表示，注意在#和文字之间添加空格，标题的级别随着#的个数增加而增加
 
 # H1
 ## H2
@@ -32,61 +27,43 @@ The following HTML `<h1>`—`<h6>` elements represent six levels of section head
 ##### H5
 ###### H6
 
-## Paragraph
+写法如下：
+```
+# H1
+## H2
+### H3
+#### H4
+##### H5
+###### H6
+```
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+## 段落
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+Markdown通过空行来形成段落
 
-## Blockquotes
+## 引用
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+通过脚注和引用符号实现应用如下：
 
-#### Blockquote without attribution
+> 希望是本无所谓有，无所谓无的。这正如地上的路；其实地上本没有路，走的人多了，也便成了路。
+> 
+> <cite>鲁迅[^1]</cite>
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
+[^1]: 上面的引用来自于鲁迅[《故乡》](https://baike.baidu.com/item/%E6%95%85%E4%B9%A1/2679148)
 
-#### Blockquote with attribution
+具体写法如下：
+```
+> 希望是本无所谓有，无所谓无的。这正如地上的路；其实地上本没有路，走的人多了，也便成了路。
+> 
+> <cite>鲁迅[^1]</cite>
 
-> Don't communicate by sharing memory, share memory by communicating.</p>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-Tables aren't part of the core Markdown spec, but Hugo supports supports them out-of-the-box.
-
-   Name | Age
---------|------
-    Bob | 27
-  Alice | 23
-
-#### Inline Markdown within tables
-
-| Inline&nbsp;&nbsp;&nbsp;     | Markdown&nbsp;&nbsp;&nbsp;  | In&nbsp;&nbsp;&nbsp;                | Table      |
-| ---------- | --------- | ----------------- | ---------- |
-| *italics*  | **bold**  | ~~strikethrough~~&nbsp;&nbsp;&nbsp; | `code`     |
+[^1]: 上面的引用来自于鲁迅[《故乡》](https://baike.baidu.com/item/%E6%95%85%E4%B9%A1/2679148)
+```
 
 ## Code Blocks
+实现代码块的最简单方式是通过三个```符号将代码块部分进行包裹，这个符号就是键盘左上角在esc下方的键，英文输入法。此外四个空格的缩紧也可以实现代码块，示例如下：
 
-#### Code block with backticks
-
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-```
-#### Code block indented with four spaces
-
+    ```
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -97,49 +74,34 @@ Tables aren't part of the core Markdown spec, but Hugo supports supports them ou
       <p>Test</p>
     </body>
     </html>
+    ```
 
-#### Code block with Hugo's internal highlight shortcode
-{{< highlight html >}}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-{{< /highlight >}}
+## 列表
+列表实现，文字前跟*或数字+.需要注意的是中间有空格，这二者也可以结合嵌套使用
 
-## List Types
-
-#### Ordered List
+#### 有序列表
 
 1. First item
 2. Second item
 3. Third item
 
-#### Unordered List
+实际写法：
+```
+1. First item
+2. Second item
+3. Third item
+```
+
+#### 无序列表
 
 * List item
 * Another item
 * And another item
 
-#### Nested list
+实际写法：
+```
+* List item
+* Another item
+* And another item
+```
 
-* Item
-    1. First Sub-item
-    2. Second Sub-item
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
