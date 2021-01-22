@@ -75,7 +75,7 @@ disableLanguages        = []
     api                 = "https://staticman3.herokuapp.com"  # No Trailing Slash
     gitProvider         = "github"
     username            = "Davidshu-git"
-    repo                = "staticman"
+    repo                = "personal-blog"
     branch              = "master"
 
     [params.staticman.recaptcha]
