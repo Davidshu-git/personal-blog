@@ -1,7 +1,7 @@
 # For a description of these parameters, please visit the theme wiki.
 # https://github.com/pacollins/hugo-future-imperfect-slim/wiki/config.toml
 baseurl                 = "https://code-david.cn/"
-DefaultContentLanguage  = "en"
+DefaultContentLanguage  = "zh-cn"
 title                   = "David Blog"
 theme                   = "hugo-future-imperfect-slim"
 paginate                = 3
@@ -92,13 +92,6 @@ disableLanguages        = []
     weight            = 1
 
   [[menu.main]]
-    name              = "关于我"
-    identifier        = "about"
-    url               = "/about/"
-    pre               = "<i class='far fa-id-card'></i>"
-    weight            = 4
-
-  [[menu.main]]
     name              = "文章"
     identifier        = "blog"
     url               = "/blog/"
@@ -113,18 +106,65 @@ disableLanguages        = []
     weight            = 3
 
   [[menu.main]]
+    name              = "关于我"
+    identifier        = "about"
+    url               = "/about/"
+    pre               = "<i class='far fa-id-card'></i>"
+    weight            = 4
+
+  [[menu.main]]
     name              = "联系我"
     identifier        = "contact"
     url               = "/contact/"
     pre               = "<i class='far fa-envelope'></i>"
-    weight            = 6
+    weight            = 5
 
-# [Languages]
+[Languages]
 
-#   [Languages.en]
-#     LanguageCode        = "en"
-#     LanguageName        = "English"
-#     weight              = 1
+  [Languages.zh-CN]
+    LanguageCode        = "zh-CN"
+    LanguageName        = "中文"
+    weight              = 1
+
+  [Languages.en]
+    LanguageCode        = "en"
+    LanguageName        = "English"
+    weight              = 2
+
+    [[Languages.en.menu.main]]
+      name              = "Home"
+      identifier        = "home"
+      url               = "/"
+      pre               = "<i class='fas fa-home'></i>"
+      weight            = 1
+
+    [[Languages.en.menu.main]]
+      name              = "Blog"
+      identifier        = "blog"
+      url               = "/blog/"
+      pre               = "<i class='far fa-newspaper'></i>"
+      weight            = 2
+
+    [[Languages.en.menu.main]]
+      name              = "Categories"
+      identifier        = "categories"
+      url               = "/categories/"
+      pre               = "<i class='fas fa-sitemap'></i>"
+      weight            = 3
+
+    [[Languages.en.menu.main]]
+      name              = "About"
+      identifier        = "about"
+      url               = "/about/"
+      pre               = "<i class='far fa-id-card'></i>"
+      weight            = 4
+
+    [[Languages.en.menu.main]]
+      name              = "Contact"
+      identifier        = "contact"
+      url               = "/contact/"
+      pre               = "<i class='far fa-envelope'></i>"
+      weight            = 5
 
 [social]
   # Coding Communities
