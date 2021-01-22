@@ -3,9 +3,7 @@ title = "关于我"
 description = "作者的个人简介"
 author = "David Shu"
 date = "2021-01-22T10:39:58+08:00"
-tags = [""]
-categories = [""]
-comments = true
+layout = "about"
 removeBlur = false
 [[images]]
   src = "https://static.code-david.cn/blog/logo.jpg"

@@ -1,7 +1,8 @@
 +++
 title = "Contact"
 layout = "contact"
-netlify = false
-emailservice = "formspree.io/example@email.com"
-contactanswertime = 24
+description = "以下是我的联系方式"
 +++
+
+- 微信：shu_dawei
+- 邮件：davidshudawei@qq.com
