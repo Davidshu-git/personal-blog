@@ -3,7 +3,6 @@ title = "Rich Content"
 description = "A brief description of Hugo Shortcodes"
 author = "Hugo Authors"
 date = "2019-03-10"
-tags = ["shortcodes", "privacy"]
 [[images]]
   src = "https://static.code-david.cn/blog/logo.jpg"
   alt = "Fox"

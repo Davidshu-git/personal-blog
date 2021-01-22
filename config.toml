@@ -28,7 +28,7 @@ disableLanguages        = []
   imageStretch          = ""
   removeBlur            = false
   # socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]
-  hideEmptyStats        = false
+  hideEmptyStats        = true
 
   [params.meta]
     description         = "a technology sharing blog maintained by David Shu"
