@@ -9,12 +9,10 @@ comments = true
 removeBlur = false
 [[images]]
   src = "https://static.code-david.cn/blog/docker_pre.jpeg"
-  alt = ""
+  alt = "girl"
   stretch = "v"
 +++
-
 macOS虽然与Linux都属于类Unix系统，但是系统函数存在差异，目前生产环境的服务器大部分都是Linux，学习Linux系统编程仍有必要，这篇文章主要解决的问题是：在macOS下无Linux环境，如何快速进行Linux环境编程实验？
-<!--more-->
 
 ## 前提知识
 在C++开发中，若涉及到底层的系统函数调用时，由于系统之间的差异，对应的接口会有所差异，鉴于目前生产环境大部分为Linux，推荐主要学习Linux对应的系统接口函数，为了保持开发环境一致，对于使用Windows、macOS等系统的同学可以使用以下几种手段：
@@ -67,7 +65,8 @@ Dockerfile参数解释:
 - USER 设定当启动container时默认的登录用户
 
 也可直接拉取我已经构建好的image，已经上传至docker hub，地址是807172378/cpp_dev_m1，这是基于arm架构的版本，已经在M1芯片的mabook上验证使用，构建历史如下：
-![](https://static.code-david.cn/blog/GfsffN.png)
+
+![image构建历史](https://static.code-david.cn/blog/GfsffN.png)
 
 ## VScode设置
 VScode给docker提供了相当全面的支持，完全可以通过VScode对docker进行管理，需要提前安装remote container插件，使用vscode快速构建container的方式有以下两种：
