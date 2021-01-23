@@ -5,7 +5,6 @@ author = "David Shu"
 date = "{{ .Date }}"
 tags = [""]
 categories = [""]
-comments = true
 removeBlur = false
 [[images]]
   src = ""

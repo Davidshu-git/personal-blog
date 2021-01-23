@@ -94,4 +94,5 @@ VScode给docker提供了相当全面的支持，完全可以通过VScode对docke
 
 - VScode的cpp-tools在安装时会出现下载失败，可能是使用了代理的原因，临时解决方案是从vsix安装
 - VScode配置container是通过.devcontainer文件夹中devcontainer.json文件进行，也可在同路径下包含一个Dockerfile进行image构建，修改文件后通过rebuild contaienr指令重新创建
+- 每次关闭container保持提交代码的习惯，虽然container关闭重启后数据不会丢失，但是还是要注意避免删除container导致丢失代码的情况
 
