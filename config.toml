@@ -44,7 +44,7 @@ disableLanguages        = []
     dynamicTitles       = false
     searchMenu          = true
     shareMenu           = false
-    languageMenu        = true
+    languageMenu        = false
 
   [params.intro]
     header                = "David Blog"
@@ -52,7 +52,7 @@ disableLanguages        = []
     rssIntro              = false
     socialIntro           = true
     hideWhenSingleColumn  = true
-    alwaysOnHomepage      = true
+    alwaysOnHomepage      = false
 
     [params.intro.pic]
       src                 = "https://static.code-david.cn/blog/logo.jpg"
