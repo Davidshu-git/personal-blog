@@ -72,14 +72,18 @@ Dockerfile参数解释:
 VScode给docker提供了相当全面的支持，完全可以通过VScode对docker进行管理，需要提前安装remote container插件，使用vscode快速构建container的方式有以下两种：
 
 ### 直接打开本地文件夹
+
 ![](https://static.code-david.cn/blog/2OirIu.png)
+
 - 优点：可以直接给予本地文件夹迅速构建
 - 缺点：需要在container中重新配置git
 - 本地文件夹是挂载在container上的，性能有折损
 - 对本地文件夹存在污染可能
 
 ### 使用git repo进行构建
+
 ![](https://static.code-david.cn/blog/OibKOm.png)
+
 优点：
 - 方便git直接推送提交，创建了专用的volume，性能折损小
 - 可快速基于git进行构建，通过保存在repo上的devcontainer配置文件直接构建
