@@ -6,11 +6,11 @@ date = "2021-01-22T14:22:16+08:00"
 tags = ["Markdown"]
 categories = ["Markdown"]
 comments = true
-removeBlur = false
+removeBlur = true
 [[images]]
-  src = "https://static.code-david.cn/blog/pic02.jpg"
+  src = "https://static.code-david.cn/blog/markdown_pre1.png"
   alt = "Desert Scene"
-  stretch = "h"
+  stretch = "v"
 +++
 
 Markdown是一种十分简便易上手的标记语言，十分适合个人开发者进行写作，这篇文章主要介绍了一些基本的Markdown语法

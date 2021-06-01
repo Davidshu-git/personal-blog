@@ -6,9 +6,9 @@ date = "2021-01-22T14:22:16+08:00"
 tags = ["docker", "vscode"]
 categories = ["c++"]
 comments = true
-removeBlur = false
+removeBlur = true
 [[images]]
-  src = "https://static.code-david.cn/blog/docker_pre.jpeg"
+  src = "https://static.code-david.cn/blog/docker_pre1.png"
   alt = "girl"
   stretch = "v"
 +++
