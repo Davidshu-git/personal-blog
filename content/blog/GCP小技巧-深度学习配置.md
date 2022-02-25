@@ -29,7 +29,7 @@ removeBlur = true
 export PATH=$PATH:/usr/local/cuda/bin
 export LD_LIBARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64
 ```
-- 编写一个安装脚本，自动化执行安装，我设置脚本名称为`repo.h·`，脚本内容如下：
+- 编写一个安装脚本，自动化执行安装，我设置脚本名称为`repo.sh`，脚本内容如下：
 ```shell
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/cuda-repo-ubuntu1804_10.2.89-1_amd64.deb
 sudo apt-key adv --fetch-keys https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub
@@ -42,7 +42,7 @@ rm -rf repo.sh cuda-repo-ubuntu1804_10.2.89-1_amd64.deb nvidia-machine-learning-
 ```
 - 执行脚本指令，将安装源添加完毕
 ```shell
-sudo sh repo.sh
+sh repo.sh
 ```
 - 执行安装指令
 ```
@@ -76,11 +76,11 @@ sudo apt-get install -y --no-install-recommends libnvinfer6=6.0.1-1+cuda10.1 \
 ```
 
 ## 动作识别实验部署
-- 推荐安装anaconda
+- 推荐安装anaconda，这里不要使用sudo，对应用户直接安装即可
 ```shell
 wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
-sudo sh Anaconda3-2020.07-Linux-x86_64.sh
-sudo rm -rf Anaconda3-2020.07-Linux-x86_64.sh
+sh Anaconda3-2020.07-Linux-x86_64.sh
+rm -rf Anaconda3-2020.07-Linux-x86_64.sh
 ```
 - 以[mmskeleton](https://github.com/open-mmlab/mmskeleton)为例，由于服务器在境外，conda源和pip源也不用修改
 ```shell

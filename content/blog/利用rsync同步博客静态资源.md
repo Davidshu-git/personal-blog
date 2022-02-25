@@ -49,4 +49,4 @@ rsync -av -e 'ssh -p 10022' /source user@remote_machine:/destination
 rsync -avh --delete public sdw@hongkong:
 ```
 
-实现功能为完全镜像同步到远端的public目录下
+实现功能为完全镜像同步到远端的public目录下，实测我自己的静态资源通过原来的全量上传大概需要30S，但是目前使用rsync可以立刻完成，时间缩短是很明显的，之后若是静态资源更大则体现的优势更加明显。
