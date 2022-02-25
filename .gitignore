@@ -3,3 +3,4 @@ public
 
 # mac文件
 **/.DS_Store
+.hugo_build.lock
