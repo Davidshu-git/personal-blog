@@ -47,36 +47,21 @@ sh repo.sh
 - 执行安装指令
 ```
 # Install NVIDIA driver & development runtime libraries (~4GB)(4min40s)
+sudo apt install cuda-drivers-470
+sudo apt install cuda-toolkit-11-4
 sudo apt-get install --no-install-recommends \
-    cuda-10-0 \
-    libcudnn7=7.6.5.32-1+cuda10.0  \
-    libcudnn7-dev=7.6.5.32-1+cuda10.0
+    libcudnn8=8.2.4.15-1+cuda11.4 \
+    libcudnn8-dev=8.2.4.15-1+cuda11.4
 
 # Install TensorRT. Requires that libcudnn7 is installed above.
-sudo apt-get install -y --no-install-recommends libnvinfer6=6.0.1-1+cuda10.0 \
-    libnvinfer-dev=6.0.1-1+cuda10.0\
-    libnvinfer-plugin6=6.0.1-1+cuda10.0
+sudo apt-get install -y --no-install-recommends libnvinfer8=8.2.3-1+cuda11.4 \
+    libnvinfer-dev=8.2.3-1+cuda11.4\
+    libnvinfer-plugin8=8.2.3-1+cuda11.4
 ```
 到这里所有需要安装的驱动均完成安装，整体耗时大约为15min，可见速度还是很快的
 
-## 不同cuda版本安装方法
-- 将上述安装指令中对应10-0或10.0的部分进行修改即可安装对应版本，如选装10.1则如下：
-
-```
-# Install NVIDIA driver & development runtime libraries (~4GB)(4min40s)
-sudo apt-get install --no-install-recommends \
-    cuda-10-1 \
-    libcudnn7=7.6.5.32-1+cuda10.1  \
-    libcudnn7-dev=7.6.5.32-1+cuda10.1
-
-# Install TensorRT. Requires that libcudnn7 is installed above.
-sudo apt-get install -y --no-install-recommends libnvinfer6=6.0.1-1+cuda10.1 \
-    libnvinfer-dev=6.0.1-1+cuda10.1\
-    libnvinfer-plugin6=6.0.1-1+cuda10.1
-```
-
 ## 动作识别实验部署
-- 推荐安装anaconda，这里不要使用sudo，对应用户直接安装即可
+- 推荐安装anaconda，这里不要使用sudo
 ```shell
 wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
 sh Anaconda3-2020.07-Linux-x86_64.sh
